@@ -1,0 +1,142 @@
+:root {
+    --mainWhite: #f5f5f5f5;
+    --mainDark : #1b4332;
+    --mainGreen: #317b22;
+    --mainBlue1: #014f86;
+    --mainBlue: #05668d;
+    --mainRed: #b80c09;
+}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1565514158740-064f34bd6cfd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--mainWhite);
+    color: var(--mainDark);
+}
+
+.budget-feedback, .expense-feedback {
+    display: none;
+}
+
+h3 {
+    font-size: 3.6rem;
+}
+
+#budget-form {
+    background-color: rgba(245, 245, 245, 0.8);
+    border: 0.15rem solid var(--mainGreen);
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+
+#budget-submit {
+    background: transparent;
+    border: 0.1rem solid var(--mainGreen);
+    border-radius: 0.25rem;
+    color: var(--mainGreen);
+}
+
+#expense-form {
+    background-color: rgba(245, 245, 245, 0.8);
+    border: 0.15rem solid var(--mainBlue1);
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+
+#expense-submit {
+    background: transparent;
+    border: 0.1rem solid var(--mainBlue1);
+    border-radius: 0.25rem;
+    color: var(--mainBlue1);
+}
+
+#budget-submit:hover {
+    background-color: var(--mainGreen);
+    color: var(--mainWhite);
+}
+
+#expense-submit:hover {
+    background-color: var(--mainBlue1);
+    color: var(--mainWhite);
+}
+
+#budget-input {
+    border: 00.05rem solid var(--mainGreen);
+}
+
+#expense-input {
+    border: 0.05rem solid var(--mainBlue1);
+}
+
+#amount-input {
+    border: 0.05rem solid var(--mainBlue1);
+}
+
+.info-title {
+    font-size: 1.5rem;
+}
+
+.budget-icon, .expense-icon, .balance-icon {
+    font-size: 3.5rem;
+    color: var(--mainBlue);
+}
+
+.budget {
+    color: var(--mainGreen);
+    font-size: 2.6rem;
+}
+
+.expense {
+    color: var(--mainBlue1);
+    font-size: 2.6rem;
+}
+
+#bal {
+    font-size: 2.6rem;
+}
+
+.list-item {
+    flex: 0 0 33.33%;
+    text-align: center;
+}
+
+.showItem {
+    display: block;
+}
+
+.showRed {
+    color: var(--mainRed);
+}
+.showGreen {
+  color: var(--mainGreen);
+}
+.showBlack {
+  color: var(--mainDark);
+}
+
+.edit-icon {
+    color: var(--mainBlue);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.delete-icon {
+    color: var(--mainRed);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.expense-amount,
+.expense-title {
+  color: var(--mainRed);
+}
+
+@media screen and (max-width: 992px) {
+    .budget, .expense, .balance {
+        font-size: 1.6rem;
+    }
+    .budget-icon, .expense-icon, .balance-icon {
+        font-size: 2.5rem;
+    }
+}
